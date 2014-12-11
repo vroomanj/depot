@@ -1,3 +1,6 @@
+//# Not sure why I had to compare to 0? Should be 1...
+if ($('#cart tr').length === 0) { $('#cart').show('blind', 1000); }
+
 $('#cart').html("<%= escape_javascript render(@cart) %>");
 
 $('#current_item').css({'background-color':'#88ff88'}).
